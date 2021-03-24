@@ -3,7 +3,6 @@ import {Button, FormControl} from 'react-bootstrap';
 import 'pages/holder/Holder.scss'
 import ApiService from 'utils/apiService';
 import {GetSavedCredentialsOutput, UnsignedW3cCredential, W3cCredential} from 'utils/apis';
-import ReactJson from 'react-json-view';
 
 interface State {
   currentUnsignedVC: UnsignedW3cCredential | null,

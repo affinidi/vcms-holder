@@ -30,6 +30,7 @@ build:
   image: node
   script:
     - echo "Build started"
+    - export REACT_APP_API_KEY_HASH=$REACT_APP_API_KEY_HASH
     - npm run build
     - echo "Build successfull"
   artifacts:
