@@ -4,9 +4,14 @@
     - web
     - main
 
+include:
+  - project: 'affinidi/foundational/foundational-pipeline'
+    file: '/security.yml'
+
 stages:
   - install
   - build
+  - security-testing
   - deploy
 
 install:
